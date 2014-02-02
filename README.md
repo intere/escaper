@@ -15,7 +15,7 @@ Running:
 
 
 Usage:
-====
+----
 
     escaper <output_type> <input_file> [output_file]
 
