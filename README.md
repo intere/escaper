@@ -11,7 +11,7 @@ Building:
 Running:
 ----
 
-    mvn clean install exec:java -Dexec.args="/tmp/test.xml" 
+    mvn clean install exec:java -Dexec.args="-java /tmp/test.xml /tmp/test.java"
 
 
 Usage:

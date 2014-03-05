@@ -11,6 +11,13 @@ public class App {
 
   public static void main(String args[]) throws Exception {
 
+    // System.out.println("Arguments: ");
+
+    // for(int i=0; i<args.length; i++) {
+    //   System.out.println("arg[" + i + "]: " + args[i]);
+    // }
+    
+
     Params params = parseCLI(args);
 
     // First, open the file:
@@ -53,6 +60,7 @@ public class App {
 
     if(null != params.outputFile) {
       FileUtils.writeStringToFile(new File(params.outputFile), output, null);
+      System.out.println("Wrote new file: " + params.outputFile);
     } else {
   	 System.out.println(output);
     }
